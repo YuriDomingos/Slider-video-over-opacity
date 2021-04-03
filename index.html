@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ <head>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title> Video on scrolling </title>
+
+ </head>   
+
+ <body>
+
+    <section class="Class-dos-homens">
+        <video src="MEN OF GOD IN SUITS Black Men's YuriFashion 2020.mp4" autoplay="" muted="" loop=""></video>
+    </section>
+    <section>
+
+        <div class="content">
+
+            <h2> Resumo de Química Geral </h2>
+            <p id="Description-video-text">
+                . o rigor nos conceitos emitidos, mantendo em todos os capítulos a
+                  precisão física e matemática, indispensáveis ao real entendimento da
+                  matéria, e o tratamento didático adotado nas partes referentes à cinética
+                  química e à termodinâmica, ao nosso ver, fazem desta obra, um livro texto
+                  indispensável aos cursos de engenharia, em particular ao da engenharia
+                  química..." Prof.
+                                               Dr. Hugo Rossi
+            </p>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+    
+    let video = window.document.querySelector('video');
+    window.addEventListener('scroll',  function() {
+        
+        let valorDaOPacidadeDoVideo = 1 + window.scrollY/-600;
+        video.style.opacity = valorDaOPacidadeDoVideo;
+
+    } );
+    </script>
+ </body>
+</html>
